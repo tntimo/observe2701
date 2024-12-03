@@ -1,5 +1,5 @@
-import empty
+import observe2701
 
 
 async def test_nothing():
-    assert await empty.main() is None, "Please add a real test"
+    assert observe2701.main is not None, "Please add a real test"

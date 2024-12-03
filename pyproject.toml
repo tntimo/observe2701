@@ -1,22 +1,23 @@
 [tool.poetry]
-name = "empty-python"
+name = "observe2701"
 version = "0.1.0"
 description = ""
 authors = ["Nicola Timoncini <tntimo@gmail.com>"]
 license = "BSD 3-Clause License"
 readme = "README.md"
 packages = [
-    { include = "empty", from = "src" },
+    { include = "observe2701", from = "src" },
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11,<3.12"
+python = "^3.12,<3.13"
 
 [tool.poetry.group.dev.dependencies]
 pyright = "^1.1.381"
 pytest = "^8.3.3"
 pytest-asyncio = "^0.24.0"
 pytest-timeout = "^2.3.1"
+pytest-xdist = "^3.6.1"
 ruff = "^0.6.7"
 time-machine = "^2.15.0"
 tox = "^4.20.0"
@@ -53,9 +54,6 @@ stubPath = "src/stubs"
 
 reportMissingImports = true
 reportMissingTypeStubs = false
-
-pythonVersion = "3.11"
-pythonPlatform = "Linux"
 
 executionEnvironments = [
   { root = "src" },

@@ -2,7 +2,7 @@ stages:
   - test
 
 default:
-  image: python:3.11-slim
+  image: python:3.12-slim
   # tags: ["docker"]  # Put here tags that makes sense for the GitLab setup
   artifacts:
     expire_in: 1 days
